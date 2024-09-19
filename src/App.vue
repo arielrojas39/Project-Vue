@@ -1,5 +1,11 @@
 <template>
 <Contador> </Contador>
+<Contador> </Contador>
+<Contador> </Contador>
+<Contador> </Contador>
+<Contador> </Contador>
+<Contador> </Contador>
+<Contador> </Contador>
 </template>
 
 <script setup>
