@@ -1,11 +1,9 @@
 <template>
-<Contador> </Contador>
-<Contador> </Contador>
-<Contador> </Contador>
-<Contador> </Contador>
-<Contador> </Contador>
-<Contador> </Contador>
-<Contador> </Contador>
+    <div>
+        <Contador> </Contador>
+        <Button>Incrementar</Button>
+    </div>
+
 </template>
 
 <script setup>

@@ -1,17 +1,25 @@
 <template>
   <div class="container">
+
     <h1>Hola mundo!</h1>
+
     <p>{{count}}</p>
+
     <div class="buttons">
-      <button @click="incrementar">Incrementar</button>
-      <button @click="decrementar">Decrementar</button>
+      <Button text="Incrementar" @click="incrementar"></Button>
+      <Button text="Decrementar" @click="decrementar"></Button>
+      <Button text="Restaurar" @click="restaurar"></Button>
     </div>
+
   </div>
 </template>
 
 <script setup>
   import {ref} from 'vue'
+  import Button from './Button.vue';
+
   const count = ref(0);
+
   const incrementar = () => {
     count.value++
   }
@@ -19,10 +27,16 @@
   const decrementar = () => {
     count.value--
   }
+
+  const restaurar = () => {
+    count.value = 0;    
+  }
 </script>
 
 <style scoped>
 .container{
+  width:100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
